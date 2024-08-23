@@ -1,9 +1,13 @@
+import Event.Fight;
+import Model.Hero;
 import Model.SkeletonWarriorTierOne;
 
 public class Main{
     public static void main(String[] args){
-        System.out.println("Загрузка");
-        SkeletonWarriorTierOne enemy = new SkeletonWarriorTierOne("Skeletor", 10, 2);
-        
+        Hero hero = new Hero(1);
+        Fight fight = new Fight("Simple Fight");
+        fight.initiateEnemies();
     }
+    
 }
+
