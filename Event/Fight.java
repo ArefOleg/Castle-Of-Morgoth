@@ -26,7 +26,7 @@ public class Fight extends AbstractEvent {
 
     public void setListOfEnemies() {
         ArrayList<AbstractEntity> listOfEnemies = new ArrayList<AbstractEntity>();
-        listOfEnemies.add(new SkeletonWarriorTierOne("Skeletor", 3, 5));
+        listOfEnemies.add(new SkeletonWarriorTierOne("Skeletor", 2, 5, 1));
         this.listOfEnemies = listOfEnemies;
     }
 }
