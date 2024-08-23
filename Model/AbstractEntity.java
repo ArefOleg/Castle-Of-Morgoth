@@ -1,11 +1,7 @@
 package Model;
 
 public class AbstractEntity {
-    public AbstractEntity(String name, Integer hp, Integer baseDamage) {
-        this.name = name;
-        this.hp = hp;
-        this.baseDamage = baseDamage;
-    }
+    
 
     private String name;
     public String getName() {
@@ -29,7 +25,7 @@ public class AbstractEntity {
     public Integer getBaseDamage() {
         return baseDamage;
     }
-    
+
     public void setBaseDamage(Integer baseDamage) {
         this.baseDamage = baseDamage;
     }
