@@ -15,7 +15,7 @@ public class Fight extends AbstractEvent {
         
     }
 
-    public void initiateEnemies(){
+    public void showEnemiesStats(){
         System.out.println(" " + listOfEnemies.get(0).getName()
         + " " + listOfEnemies.get(0).getHp()+"hp");
     }
@@ -28,5 +28,10 @@ public class Fight extends AbstractEvent {
         ArrayList<AbstractEntity> listOfEnemies = new ArrayList<AbstractEntity>();
         listOfEnemies.add(new SkeletonWarriorTierOne("Skeletor", 2, 5, 1));
         this.listOfEnemies = listOfEnemies;
+    }
+
+    public void showUserAction(){
+        Scanner userChoise = new Scanner(System.in);
+        int numberChoise = userChoise.nextInt();
     }
 }
