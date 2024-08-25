@@ -1,13 +1,9 @@
 package Model;
 
 public class Hero extends AbstractEntity{
-    
-
-    public Hero(Integer level) {    
-        this.setHp(level * 10);
-        this.setName("Hero");
-        this.setBaseDamage(level * 3);
-    }
+    public Hero(String name, Integer hp, Integer baseDamage, Integer initiative){
+        super(name, hp, baseDamage, initiative);
+    }   
     
     
 }
